@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM python:3.8-slim-buster
 RUN apt-get update && DEBIAN_FRONTEND="noninteractive" TZ="America/New_York" apt-get install -y tzdata
 RUN apt-get -y install python3-pip && apt-get -y install curl && apt-get -y install git
 WORKDIR /app
